@@ -30,16 +30,28 @@ h5{
 h6{
     color: rgb(83, 81, 81);
 }
-header{
-    background-image: url(../Multimedia/logo1.jpg);
+header {
+    
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 300px;
+    margin-top: 0;
+    text-align: center;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 body{
     font-family: 'Fira Sans Extra Condensed', sans-serif;
+    padding: 0px 20px; /* Ajusta el valor del relleno según el espacio que desees en los laterales */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    margin-top: 0;
 }
 
 .borde-redondo{
@@ -61,6 +73,7 @@ body{
     padding: 0; /* Elimina el relleno predeterminado de la lista */
     background-image: linear-gradient(to right, #78f4be, #0fe9dc, #00daf5, #00c7ff, #5cb1ff, #88a7ff, #b898ff, #e684f1, #ec8aec, #f291e8, #f698e5, #f99fe2);
     display: flex; /* Utiliza el modelo de caja flexible para alinear los elementos en línea horizontalmente */
+    top: 0
     
 
 }
@@ -71,8 +84,8 @@ body{
     text-align: center; /* Alineación del texto en el centro */
     padding: 14px 16px; /* Espacio interno (arriba y abajo, izquierda y derecha) de los enlaces */
     text-decoration: none; /* Quita el subrayado de los enlaces */
-    height: 50px;
-    font-size: 2vw;
+    height: 40px;
+    letter-spacing: 4px
 }
 .navbar li {
     margin: 0;
@@ -83,11 +96,15 @@ body{
     text-decoration: none; /* Quita el subrayado de los enlaces */
     padding: 15px; /* Espacio interno de los enlaces */
 }
-
-    
 .navbar :hover {background-image: linear-gradient(to right top, #f904cf, #fb40d5, #fd5ddb, #fe74e0, #ff88e5);
 }
 /* Estilo para el contenedor del formulario */
+.logo1 {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
+    max-width: 500px; /* Establece un ancho máximo para la imagen, ajusta según sea necesario */
+    margin-top: 20px; /* Ajusta según sea necesario para agregar espacio entre la barra de navegación y la imagen */
+
+}
 .formulario-container {
     display: flex;
     justify-content: center;
